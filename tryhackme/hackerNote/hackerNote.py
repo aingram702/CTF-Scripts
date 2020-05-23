@@ -4,12 +4,12 @@ import time
 import json
 
 
-URL = 'http://10.10.147.31/api/user/login'
+URL = 'http://<remote-ip>/api/user/login' # insert remote ip here
 USERNAME_FILE = open("names.txt", "r")
 usernames = []
 
 
-for line in USERNAME_FILE:  # Read in usernames from the wordlist
+for line in USERNAME_FILE:  # read in usernames from the wordlist
     usernames.append(line.replace("\n", ""))
 
 
